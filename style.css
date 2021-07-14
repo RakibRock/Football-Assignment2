@@ -1,0 +1,213 @@
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/*--------------- Hero Section ---------------*/
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d25a0;
+}
+
+.left-section {
+  padding: 207px 0 169px 156px;
+}
+.left-section h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.right-section img {
+  width: 556px;
+  height: 438px;
+  padding: 153px 100px 86px 51px;
+}
+
+.sec-title {
+  font-size: 60px;
+  color: white;
+}
+button {
+  background-color: #e02c6d;
+  color: white;
+  padding: 12px 30px 12px 30px;
+  margin-top: 14px;
+  margin: 0;
+  border: 0;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/*---------- Players section ---------*/
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 45px;
+  row-gap: 27px;
+  padding: 70px 180px 70px 140px;
+}
+.player {
+  border: ;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+}
+.player-image img {
+  width: ;
+}
+.player-image > img {
+  padding: 15px 15px 0 15px;
+}
+
+.player-details {
+  padding: 16px 15px 33px 15px;
+}
+.player-details h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.player-details p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/*---------- Highlights Section ----------*/
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 69px;
+  padding-top: 82px;
+}
+
+.left-text {
+  padding: 50px 30px 160px 140px;
+}
+.left-text h2 {
+  font-size: 48px;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1.2;
+}
+.left-text p {
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding-top: 8px;
+}
+
+/*----- Video Section -----*/
+.youtube-video {
+  margin-left: 140px;
+  padding: 50px 20px 50px 0;
+}
+iframe {
+  height: 500px;
+}
+
+/*---------- Footer Section ----------*/
+.football {
+  display: flex;
+  justify-content: center;
+  padding-top: 79px;
+}
+.social-icons,
+.text {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons i {
+  margin-right: 7px;
+  padding: 20px 10px;
+}
+.text {
+  padding-bottom: 20px;
+}
+/*---------- Media Query ----------*/
+
+/*----- Hero Section -----*/
+
+@media only screen and (max-width: 480px) {
+  .hero-section {
+    flex-direction: column;
+    width: 100%;
+  }
+  .left-section {
+    padding: 0;
+    padding-right: 50px;
+    padding-top: 112px;
+    padding-left: 17px;
+  }
+  .left-section h1 {
+    font-size: 46px;
+    line-height: 1.3;
+  }
+  .right-section img {
+    padding: 0;
+    padding-top: 70px;
+    padding-left: 15px;
+    padding-bottom: 62px;
+    width: 380px;
+    height: 320px;
+  }
+  .left-section button {
+    font-size: 17px;
+  }
+  /*----- players section -----*/
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 47px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0%;
+  }
+  .player-image img {
+    width: 350px;
+  }
+  .player-details {
+    padding-bottom: ;
+  }
+
+  /*----- Highlight Section -----*/
+  .highlights {
+    grid-template-columns: 1fr;
+    padding: 60px 15px 30px 15px;
+    width: 80%;
+    margin-right: 0;
+  }
+  .left-text {
+    padding: 0;
+    width: 100%;
+  }
+  .left-text h2 {
+    font-size: 30px;
+  }
+  .rigth-image img {
+    width: 368px;
+    margin-top: 30px;
+  }
+
+  /*----- Video Section -----*/
+  .youtube-video {
+    padding: 0;
+    margin-left: 15px;
+    width: 100%;
+  }
+
+  /*----- Footer Section -----*/
+  footer {
+    padding-bottom: 100px;
+  }
+  .football img {
+    width: 60%;
+    padding: 50px 50px 0 50px;
+  }
+  .social-icons {
+    width: 100%;
+  }
+  .text {
+    padding: 0;
+  }
+}
